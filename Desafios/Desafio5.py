@@ -26,5 +26,4 @@ while True:
     
     if palavra_formada == palavra_secreta:
         print('Conseguiu!')
-        print(f'Você tentou {len(letra_secreta)} vezes')
         break
