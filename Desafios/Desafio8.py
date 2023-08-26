@@ -5,7 +5,7 @@ lista = []
 while True:
     opcao = input('Lista de compra, escolha uma opção\n1-Inserir\n2-Listar\n3-Deletar\n')
     os.system('clear')
-    match int(opcao):
+    match int(opcao): #Usado para fazer um swich case em python, att da 3.11
         case 1:
             item = input('Inserir: ')
             if item.isdigit():
