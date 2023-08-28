@@ -1,5 +1,11 @@
-cpf = '09701739973'
-nove_validos = cpf[:9]
+import random
+
+nove_validos = ''
+
+for i in range(9):
+    nove_validos = str(random.randint(0, 9))
+
+print(nove_validos)
 contador = 10
 resultado = 0
 for digito in nove_validos:
@@ -19,8 +25,9 @@ result_dois = (resultado_dois * 10) % 11
 segundo_digito = 0 if result_dois > 9 else result_dois
 
 cpf_validado = f'{nove_validos}{primeiro_digito}{segundo_digito}'
+print(cpf_validado)
 
-if cpf_validado == cpf:
-    print(f'{cpf_validado} é valido.')
-else:
-    print('CPF inválido.')
+# if cpf_validado == cpf:
+#     print(f'{cpf_validado} é valido.')
+# else:
+#     print('CPF inválido.')
