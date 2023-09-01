@@ -15,7 +15,7 @@ def multiplicacao(*args):
         
     return resultado
 
-resultado = multiplicacao(lista_de_numeros)
+resultado = multiplicacao(*lista_de_numeros)
 print(resultado)
 
 def imparPar(x):
