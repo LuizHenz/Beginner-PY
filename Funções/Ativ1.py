@@ -10,12 +10,12 @@ lista_de_numeros = list(map(int, lista_de_numeros))
 
 def multiplicacao(*args):
     resultado = 1
-    for numeros in range(len(args)):
-        resultado *= args[numeros]
+    for numeros in args:
+        resultado *= numeros
         
     return resultado
 
-resultado = multiplicacao(lista_de_numeros)
+resultado = multiplicacao(*lista_de_numeros)
 print(resultado)
 
 def imparPar(x):
